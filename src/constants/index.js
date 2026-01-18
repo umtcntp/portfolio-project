@@ -213,7 +213,7 @@ const projects = [
             { name: "emailjs", color: "green-text-gradient" },
         ],
         image: portfolio,
-        source_code_link: "https://github.com/umtcntp/<repo-adi>",
+        source_code_link: "https://github.com/umtcntp/portfolio-project",
     },
 ];
 
