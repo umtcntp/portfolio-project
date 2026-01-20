@@ -10,8 +10,8 @@ import { fadeIn, textVariant } from "../utils/motion";
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt
     className="w-full h-full"
-    tiltMaxAngleX={45}
-    tiltMaxAngleY={45}
+    tiltMaxAngleX={8}
+    tiltMaxAngleY={8}
     scale={1}
     transitionSpeed={450}
   >
@@ -39,7 +39,7 @@ const About = () => {
       {/* Metin blok */}
       <motion.div
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-6 max-w-5xl text-secondary text-[20px] leading-[32px] !space-y-6"
+        className="mt-6 max-w-8xl text-secondary text-[20px] leading-[32px] !space-y-6"
       >
         <p>
           I’m a full-stack developer with a strong background in modern web development and software engineering.
