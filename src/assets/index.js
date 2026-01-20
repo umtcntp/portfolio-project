@@ -22,11 +22,12 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 import digitalocean from "./tech/digitalocean.png";
 import python from "./tech/python.png";
+import vuejs from "./tech/vuejs.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import kodland from "./company/kodland.png";
+import countly from "./company/countly.png";
+import onurenerji from "./company/onurenerji.png";
+import hangikredi from "./company/hangikredi.png";
 
 import ecommerceapp from "./ecommerceapp.png";
 import portfolio from "./portfolio.png";
@@ -55,10 +56,11 @@ export {
   threejs,
   digitalocean,
   python,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  vuejs,
+  kodland,
+  countly,
+  onurenerji,
+  hangikredi,
   ecommerceapp,
   portfolio,
 };
