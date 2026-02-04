@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { useInView } from "react-intersection-observer";
 import { About, Contact, Experience, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
-import Footer from "./components/footer";
+import Footer from "./components/Footer";
 
 const App = () => {
   const { ref, inView } = useInView({ threshold: 0.15 });
