@@ -24,7 +24,8 @@ import {
     portfolio,
     threejs,
     digitalocean,
-    python
+    python,
+    ugcapp
 
 } from "../assets";
 
@@ -203,6 +204,7 @@ const projects = [
             { name: "tailwind", color: "pink-text-gradient" },
             { name: "docker", color: "blue-text-gradient" },
             { name: "digitalocean", color: "blue-text-gradient" },
+            { name: "caddy", color: "blue-text-gradient" },
         ],
         image: ecommerceapp,
         source_code_link: "https://github.com/umtcntp/e-commerce-app",
@@ -224,6 +226,26 @@ const projects = [
         ],
         image: portfolio,
         source_code_link: "https://github.com/umtcntp/portfolio-project",
+    },
+    {
+        name: "UGC-AI",
+        description:
+            "Full-stack UGC ad generator that produces AI images and videos from product inputs, with auth + credits + cloud storage. React (Vite) + Tailwind + Node/Express + Prisma/PostgreSQL.",
+        tags: [
+            { name: "react", color: "blue-text-gradient" },
+            { name: "tailwind", color: "pink-text-gradient" },
+            { name: "nodejs", color: "green-text-gradient" },
+            { name: "express", color: "green-text-gradient" },
+            { name: "prisma", color: "blue-text-gradient" },
+            { name: "postgresql", color: "blue-text-gradient" },
+            { name: "clerk", color: "pink-text-gradient" },
+            { name: "cloudinary", color: "green-text-gradient" },
+            { name: "docker", color: "pink-text-gradient" },
+            { name: "google-genai", color: "blue-text-gradient" },
+        ],
+        image: ugcapp,
+        source_code_link: "https://github.com/umtcntp/ugc-ads",
+        live_demo_link: "https://ugcads.site/"
     },
 ];
 
