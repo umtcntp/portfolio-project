@@ -31,7 +31,8 @@ import hangikredi from "./company/hangikredi.png";
 
 import ecommerceapp from "./ecommerceapp.png";
 import portfolio from "./portfolio.png";
-import ugcapp from "./ugcapp.png"
+import ugcapp from "./ugcapp.png";
+import kosmadankosamazsin from "./kosmadankosamazsin.png";
 
 export {
   logo,
@@ -64,5 +65,6 @@ export {
   hangikredi,
   ecommerceapp,
   portfolio,
-  ugcapp
+  ugcapp,
+  kosmadankosamazsin
 };

@@ -25,7 +25,8 @@ import {
     threejs,
     digitalocean,
     python,
-    ugcapp
+    ugcapp,
+    kosmadankosamazsin
 
 } from "../assets";
 
@@ -246,6 +247,24 @@ const projects = [
         image: ugcapp,
         source_code_link: "https://github.com/umtcntp/ugc-ads",
         live_demo_link: "https://ugcads.site/"
+    },
+    {
+        name: "Koşmadan Koşamazsın",
+        description:
+            "Modern website and admin panel for a running community brand. Built with custom HTML, CSS, JavaScript, PHP, and MySQL. Includes responsive pages, blog and event calendar management, contact form handling, SEO setup, sitemap integration, and automated deployment to shared hosting with GitHub Actions.",
+        tags: [
+            { name: "html", color: "blue-text-gradient" },
+            { name: "css", color: "pink-text-gradient" },
+            { name: "javascript", color: "green-text-gradient" },
+            { name: "php", color: "blue-text-gradient" },
+            { name: "mysql", color: "green-text-gradient" },
+            { name: "seo", color: "pink-text-gradient" },
+            { name: "github-actions", color: "blue-text-gradient" },
+            { name: "ftp-deploy", color: "green-text-gradient" },
+            { name: "directadmin", color: "pink-text-gradient" },
+        ],
+        image: kosmadankosamazsin,
+        live_demo_link: "https://kosmadankosamazsin.com/",
     },
 ];
 
