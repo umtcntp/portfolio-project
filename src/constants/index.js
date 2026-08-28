@@ -251,7 +251,7 @@ const projects = [
     {
         name: "Koşmadan Koşamazsın",
         description:
-            "Modern website and admin panel for a running community brand. Built with custom HTML, CSS, JavaScript, PHP, and MySQL. Includes responsive pages, blog and event calendar management, contact form handling, SEO setup, sitemap integration, and automated deployment to shared hosting with GitHub Actions.",
+            "Modern website and admin panel for a running community brand. Built with HTML, CSS, JavaScript, PHP, and MySQL, featuring blog and event management, SEO, contact forms, and automated GitHub Actions deployment.",
         tags: [
             { name: "html", color: "blue-text-gradient" },
             { name: "css", color: "pink-text-gradient" },

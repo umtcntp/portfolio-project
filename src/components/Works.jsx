@@ -18,7 +18,10 @@ const ProjectCard = ({
   live_demo_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      className="w-full h-full"
+    >
       <Tilt
         options={{
           scale: 1,
@@ -26,48 +29,55 @@ const ProjectCard = ({
         }}
         tiltMaxAngleX={8}
         tiltMaxAngleY={8}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className="bg-tertiary p-5 rounded-2xl w-full h-full"
       >
-        <div className='relative w-full h-[230px]'>
+        <div className="relative w-full h-[230px]">
           <img
             src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            alt="project_image"
+            className="w-full h-full object-cover rounded-2xl"
           />
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
+          <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-2">
             {/* Live Demo (varsa) */}
             {live_demo_link && (
               <div
                 onClick={() => window.open(live_demo_link, "_blank")}
-                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
                 title="Live Demo"
               >
-                <span className="text-white text-[10px] font-semibold">LIVE</span>
+                <span className="text-white text-[10px] font-semibold">
+                  LIVE
+                </span>
               </div>
             )}
 
-            {/* GitHub */}
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-              title="Source Code"
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
+            {/* GitHub (varsa) */}
+            {source_code_link && (
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+                title="Source Code"
+              >
+                <img
+                  src={github}
+                  alt="source code"
+                  className="w-1/2 h-1/2 object-contain"
+                />
+              </div>
+            )}
           </div>
         </div>
 
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+
+          <p className="mt-2 text-secondary text-[14px]">
+            {description}
+          </p>
         </div>
 
-        <div className='!mt-6 flex flex-wrap gap-x-2 gap-y-1'>
+        <div className="!mt-6 flex flex-wrap gap-x-2 gap-y-1">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -78,7 +88,7 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div >
+    </motion.div>
   );
 };
 
@@ -90,10 +100,10 @@ const Works = () => {
         <h2 className={`${styles.sectionHeadText}`}>Projects</h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-8xl leading-[30px]'
+          className="mt-3 text-secondary text-[17px] max-w-8xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -103,9 +113,13 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='!mt-16 flex flex-wrap gap-7'>
+      <div className="!mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+          />
         ))}
       </div>
     </>
